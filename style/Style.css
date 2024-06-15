@@ -1,0 +1,390 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+/* this is the first Home page section */
+html {
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: transparent;
+  background: linear-gradient(45deg, #e5e5e5, #0078d4, green);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+img {
+  width: 2rem;
+}
+#Home {
+  width: 100%;
+  height: 580px;
+  background: #09151a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+#Homepage {
+  background: #000;
+  .Navigation ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    color: wheat;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: fixed;
+    top: 0;
+  }
+  li {
+    list-style: none;
+  }
+  li a {
+    padding: 2rem 0 0.5rem 0;
+    font-size: 1rem;
+    text-decoration: none;
+    color: transparent;
+    background: linear-gradient(150deg, #38a9ff, rgb(214, 255, 214));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  li a:hover {
+    text-decoration: none;
+    color: transparent;
+    background: linear-gradient(150deg, #87c7f8, rgb(2, 147, 2));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* #Homepage {
+  background-color: rgb(250, 250, 250);
+  li a {
+    padding: 0;
+    background: linear-gradient(150deg, #6a34ea, rgb(6, 43, 6));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+} */
+
+.Title {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.Title_Name {
+  font-size: 2rem;
+
+  margin-bottom: 2rem;
+}
+
+.person_img-container {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  margin: 9rem 3rem 2rem 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30%;
+  }
+}
+
+.Title_paragraph {
+  font-size: 2.5vh;
+  margin: 0.25rem;
+}
+.btn {
+  margin-top: 5rem;
+}
+.btn-lg {
+  width: fit-content;
+  background: #000;
+  padding: 10px 15px;
+  background: #0078d4;
+  color: #000;
+  border-radius: 0.25rem;
+  border: none;
+  margin-right: 0.3rem;
+}
+
+.btn-lg:hover {
+  background: #0078d4;
+  color: #000;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.btn-sm {
+  width: 20vh;
+  border: 2px solid #0078d4;
+  padding: 5px 1px;
+  background: #000;
+  color: #2a83c7;
+  border-radius: 0.25rem;
+}
+.btn-sm:hover {
+  color: #0078d4;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+/* this is for the img secioptn */
+#About {
+  width: 100%;
+  height: 580px;
+  background: #09151a;
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  color: wheat;
+  padding: 4rem;
+}
+.About_Tile {
+  width: 60%;
+  height: 100%;
+  margin: 1rem;
+}
+.About_Tile h2 {
+  font-size: 2.8rem;
+  margin-left: 1rem;
+}
+.About_Tile p {
+  margin-top: 1.5rem;
+  margin-left: 0.3rem;
+}
+.About_person-img-Title {
+  width: 40%;
+
+  .img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.35rem;
+  }
+}
+/* this is the thire section */
+#my_Skile {
+  width: 100%;
+  height: 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #09151a;
+  justify-content: center;
+}
+.my-paragraph {
+  color: white;
+  width: 80%;
+  margin-top: 2rem;
+}
+
+/* four section start here */
+#Portfolio {
+  width: 100%;
+  height: 640px;
+  background: #38a9ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.portfolio_Title {
+  font-size: 2rem;
+  text-align: left;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row: auto;
+  margin: 3rem;
+  column-gap: 0.5rem;
+}
+
+.item img {
+  width: 80%;
+  border-radius: 0.25rem;
+}
+.head_Title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+/* new section strt here */
+
+#Testimonials {
+  background: #09151a;
+  width: 100%;
+  height: 640px;
+  color: white;
+}
+.Testimonials_Title {
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+/* new section start here */
+
+#Blog {
+  width: 100%;
+  height: 580px;
+  background: #09151a;
+  color: white;
+}
+.Blog_Tile {
+  padding: 3rem;
+  font-size: 3rem;
+  padding-left: 7rem;
+  color: white;
+}
+
+.Blog_Container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  p {
+    line-height: 2rem;
+  }
+}
+/* new section start here */
+
+#Quation {
+  width: 100%;
+  height: 580px;
+  background: #09151a;
+  color: white;
+}
+.Quation_Title {
+  font-size: 2.4rem;
+  padding: 2rem;
+  color: white;
+}
+#Quation .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Quation .container h5 {
+  font-size: 1.4rem;
+  margin: 0.5rem 0;
+}
+
+.Q_item {
+  height: 2rem;
+  overflow: hidden;
+  margin-top: 2rem;
+  transition: 0.5s;
+}
+
+.active {
+  height: 6rem;
+  transition: 0.5s;
+}
+
+.Plus_item {
+  font-size: 1.4rem;
+  font-weight: 900;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
+/* new section start here */
+
+#Contact {
+  width: 100%;
+  height: 580px;
+  background: #535353;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Contact_Container {
+  width: 70%;
+  padding: 0 7rem;
+}
+.Contact_Title {
+  font-size: 2.5rem;
+  padding: 1rem 0.25rem;
+}
+
+#Connect {
+  width: 100%;
+  height: 580px;
+  background: #09151a;
+  color: white;
+  display: flex;
+  padding: 3rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Connect_Title {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+#Connect h5 {
+  padding-block: 1rem;
+  font-size: 1.4rem;
+}
+
+#Connect .Connect_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1.5rem;
+}
+.Connect_container img {
+  width: 4rem;
+}
+
+.Hidden {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 2s;
+  filter: blur(5px);
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 2s;
+  filter: blur(0);
+}
+
+.item1 {
+  transition-delay: 0.3s;
+}
+.item2 {
+  transition-delay: 0.6s;
+}
+.item3 {
+  transition-delay: 0.8s;
+}
+.item4 {
+  transition-delay: 1s;
+}
